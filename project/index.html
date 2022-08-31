@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <nav>
+      <ul class="n-bar">
+        <li>
+          <button class="nav_bar_icon">
+            <img
+              src="nav_bar_icon.png"
+              alt="nav bar icon"
+              class="icon-navb-img"
+            />
+          </button>
+        </li>
+        <li class="udemy-logo">
+          <a href="empty.html" target="_blank"
+            ><img src="R.png" alt="udemy logo" class="udemy-logo"
+          /></a>
+        </li>
+        <li class="n-bar-item">
+          <a href="empty.html" target="_blank" class="text-link">categories</a>
+        </li>
+        <li class="n-bar-item">
+          <li>
+            <input
+            id="search-input"
+            type="text"
+            name="search"
+            placeholder="Search"
+            class="search"
+          />
+          </li>
+          <li>
+            <button type="button" id="search-button" class="search-btn">
+              <img src="R (1).png" alt="search icon" class="icon" />
+            </button>
+          </li>
+        </li>
+      
+        <li class="n-bar-item" id="text-link">
+          <a href="empty.html" target="_blank" class="text-link"
+            >Udemy Business</a
+          >
+        </li>
+        <li class="n-bar-item" id="text-link">
+          <a href="empty.html" target="_blank" class="text-link"
+            >Teach on Udemy</a
+          >
+        </li>
+        <li class="n-bar-item">
+          <a href="empty.html" target="_blank"
+            ><img src="shopping.png" alt="shopping icon" class="icon"
+          /></a>
+        </li>
+        <li class="n-bar-item">
+          <a href="empty.html" target="_blank"
+            ><button type="button" class="log-in">Log in</button></a
+          >
+        </li>
+        <li class="n-bar-item">
+          <a href="empty.html" target="_blank"
+            ><button type="button" class="sign-up">Sign up</button></a
+          >
+        </li>
+
+        <li class="n-bar-item">
+          <a href="empty.html" target="_blank"
+            ><img src="world.png" alt="language icon" class="iconn"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header">
+      <div class="text-box1">
+        <span><h1>New to Udemy? Lucky you.</h1></span> <br />
+        <span class="span1"
+          >Courses start at E£169.99. Get your new-student offer before it
+          expires.</span
+        >
+      </div>
+      <div>
+        <img src="clock.png" alt="clock" class="clock-pic" />
+      </div>
+    </div>
+
+    <div class="body">
+      <div class="text1-body">
+        <span><h1>A broad selection of courses</h1></span> <br />
+        <span class="span1"
+          >Choose from 185,000 online video courses with new additions published
+          every month</span
+        >
+      </div>
+      <div class="links-body" id="courses-categories"></div>
+
+      <div class="courses_parent">
+        <div
+          id="courses-container"
+          class="carousel slide container"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner" id="courses-container-inner"></div>
+          <a
+            class="carousel-control-prev btn"
+            href="#courses-container"
+            role="button"
+            data-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon btn"
+              aria-hidden="true"
+            ></span>
+            <span class="sr-only btn-coloring btn">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next btn"
+            href="#courses-container"
+            role="button"
+            data-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon btn"
+              aria-hidden="true"
+            ></span>
+            <span class="sr-only btn-coloring btn">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container-fluid">
+      <div class="col-sm-3 col-md-6 col-lg-8">
+        <div class="course-container" id="course-container">
+          <div id="course-image">
+            <img src="" alt="course-python-logo" class="course-logo" />
+          </div>
+          <div class="course-text">
+            <span id="course-title"
+              ><h4>
+                Learn Python: The Complete Python Programming Course
+              </h4></span
+            >
+            <span id="course-author">Avanish Jain, the codex</span>
+          </div>
+          <div class="course-rating" id="course-rating">4.4</div>
+          <div id="course-price">E£679.99</div>
+        </div>
+        <div class="course1">
+          <div>
+            <img src="" alt="course-python-logo" class="course-logo" />
+          </div>
+          <div class="course-text">
+            <span
+              ><h4>
+                Learning Python for Data Analysis and Visualization
+              </h4></span
+            >
+            <span>Jose Portilla</span>
+          </div>
+          <div class="course-rating">4.4</div>
+          <div>E£1599.99</div>
+        </div>
+        <div class="course1">
+          <div>
+            <img src="" alt="course-python-logo" class="course-logo" />
+          </div>
+          <div class="course-text">
+            <span
+              ><h4>
+                Python for Beginners - Learn Programming from scratch
+              </h4></span
+            >
+            <span>Edwen Diaze,Coding Faculty Solution</span>
+          </div>
+          <div class="course-rating">4.4</div>
+          <div>E£679.99</div>
+        </div>
+        <div class="course1">
+          <div>
+            <img src="" alt="course-python-logo" class="course-logo" />
+          </div>
+          <div class="course-text">
+            <span
+              ><h4>
+                Learn Python: The Complete Python Programming Course
+              </h4></span
+            >
+            <span>Avanish Jain, the codex</span>
+          </div>
+          <div class="course-rating">4.4</div>
+          <div>E£319.99</div>
+        </div>
+        <div class="course1">
+          <div>
+            <img src="" alt="course-python-logo" class="course-logo" />
+          </div>
+          <div class="course-text">
+            <span
+              ><h4>
+                Learn Python: The Complete Python Programming Course
+              </h4></span
+            >
+            <span>Avanish Jain, the codex</span>
+          </div>
+          <div class="course-rating">4.4</div>
+          <div>E£519.99</div>
+        </div>
+        <div class="course1">
+          <div>
+            <img src="" alt="course-python-logo" class="course-logo" />
+          </div>
+          <div class="course-text">
+            <span
+              ><h4>
+                Learn Python: The Complete Python Programming Course
+              </h4></span
+            >
+            <span>Avanish Jain, the codex</span>
+          </div>
+          <div class="course-rating">4.4</div>
+          <div>E£679.99</div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="d-flex align-content-stretch flex-wrap">
+      <div><a href="https://imgbb.com/"><img src="https://i.ibb.co/5Ttk0gx/Business.png" alt="Business" border="0"></a>Business</div>
+      <div><a href="https://imgbb.com/"><img src="https://i.ibb.co/xSMwzQP/Design.png" alt="Design" border="0"></a>Design</div>
+      <div><a href="https://imgbb.com/"><img src="https://i.ibb.co/WHhG3Wg/Development.png" alt="Development" border="0"></a>Development</div>
+      <div><a href="https://imgbb.com/"><img src="https://i.ibb.co/YXLRYNL/IT-and-Software.png" alt="IT-and-Software" border="0"></a>IT and Software</div>
+      <div><a href="https://imgbb.com/"><img src="https://i.ibb.co/d5R3N54/Marketing.png" alt="Marketing" border="0"></a>Marketing</div>
+      <div><a href="https://imgbb.com/"><img src="https://i.ibb.co/FJcc6qQ/Music.png" alt="Music" border="0"></a>Music</div>
+      <div><a href="https://imgbb.com/"><img src="https://i.ibb.co/0fx6fYb/Photography.png" alt="Photography" border="0"></a>Photography</div>
+      <div><a href="https://imgbb.com/"><img src="https://i.ibb.co/7GXn6wL/Personal-Development.png" alt="Personal-Development" border="0"></a>Personal Development</div>
+    </div> -->
+    <div id="categories-container" class="categories-container">
+      <div id="categories-title" class="categories-title">
+        <h2>Top Categories</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div>
+              <a href="https://imgbb.com/"
+                ><img
+                  src="https://i.ibb.co/5Ttk0gx/Business.png"
+                  alt="Business"
+                  border="0"
+                  class="image-class"
+              /></a>
+            </div>
+            <span
+              ><center><b>Business</b></center></span
+            >
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div>
+              <a href="https://imgbb.com/"
+                ><img
+                  src="https://i.ibb.co/xSMwzQP/Design.png"
+                  alt="Design"
+                  border="0"
+                  class="image-class"
+              /></a>
+            </div>
+            <span
+              ><center><b>Design</b></center></span
+            >
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div>
+              <a href="https://imgbb.com/"
+                ><img
+                  src="https://i.ibb.co/WHhG3Wg/Development.png"
+                  alt="Development"
+                  border="0"
+                  class="image-class"
+              /></a>
+            </div>
+            <span
+              ><center><b>Development</b></center></span
+            >
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div>
+              <a href="https://imgbb.com/"
+                ><img
+                  src="https://i.ibb.co/YXLRYNL/IT-and-Software.png"
+                  alt="IT-and-Software"
+                  border="0"
+                  class="image-class"
+              /></a>
+            </div>
+            <span
+              ><center><b>IT and Software</b></center></span
+            >
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div>
+              <a href="https://imgbb.com/"
+                ><img
+                  src="https://i.ibb.co/d5R3N54/Marketing.png"
+                  alt="Marketing"
+                  border="0"
+                  class="image-class"
+              /></a>
+            </div>
+            <span
+              ><center><b>Marketing</b></center></span
+            >
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div>
+              <a href="https://imgbb.com/"
+                ><img
+                  src="https://i.ibb.co/FJcc6qQ/Music.png"
+                  alt="Music"
+                  border="0"
+                  class="image-class"
+              /></a>
+            </div>
+            <span
+              ><center><b>Music</b></center></span
+            >
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div>
+              <a href="https://imgbb.com/"
+                ><img
+                  src="https://i.ibb.co/0fx6fYb/Photography.png"
+                  alt="Photography"
+                  border="0"
+                  class="image-class"
+              /></a>
+            </div>
+            <span
+              ><center><b>Photography</b></center></span
+            >
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div>
+              <a href="https://imgbb.com/"
+                ><img
+                  src="https://i.ibb.co/7GXn6wL/Personal-Development.png"
+                  alt="Personal-Development"
+                  border="0"
+                  class="image-class"
+              /></a>
+            </div>
+            <span
+              ><center><b>Personal Development</b></center></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

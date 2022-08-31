@@ -1,0 +1,224 @@
+
+.n-bar{
+    display: flex;
+    align-items: center;   
+}
+.n-bar-item{
+    
+    margin-right: 2rem;
+    
+}
+
+.udemy-logo{
+    width: 130%;
+    margin-right: 5%;
+}
+
+li{
+    list-style-type: none;
+    
+}
+
+.icon{
+    width:150%;
+}
+
+.clock-pic{
+    height: 100%;
+    width: 100%;
+    
+}
+.header{
+    display: flex;
+    padding:  0% 10%;
+}
+.log-in{
+    color: black;
+    background-color:whitesmoke;
+    width: 70px;
+    height: 35px;
+    
+}
+.sign-up{    
+    color: whitesmoke;
+    background-color: black;
+    width: 70px;
+    height: 35px;
+   
+}
+.text-link{   
+    text-decoration: none;
+    color: black;
+    font-size: 20px;   
+}
+.search{
+    padding: 1% 9.5%;
+    /* width: 100px; */
+    
+}
+.text-box1{
+    padding-right: 10%;
+    padding-top: 5%;
+}
+.span1{
+    font-size: 25px;
+}
+/* .courses-container{
+    display: flex ;
+    flex-wrap: wrap;   
+   
+}  */
+ /* .course-container{
+    padding: 20px;
+    max-width: 20%;
+    text-align: justify;
+   
+} */
+.iconn{
+    
+    width: 40%;
+    
+}
+ 
+body{
+    
+    padding-left: 1%;
+    
+}
+
+.nav_bar_icon{
+    display: none;
+}
+
+.links-body{
+ display: flex;
+ flex-direction: row;
+}
+.links-body-child :hover{
+    border-style: double;
+    border-radius: 10%;
+
+}
+.links-body-child{
+    padding: 2%;
+}
+
+.button-body :hover{
+    border-style: double;
+    border-radius: 10%; 
+}
+.button-body{
+    font-size: 15px;
+    
+    width: 140px;
+    height: 35px;
+}
+.courses_parent{
+    border-style: groove;
+    margin: 2%;
+    padding: 2%;
+}
+.text_on_courses_parent1{
+    width: 50%;
+}
+
+.course-logo{
+    width: 100%;
+    
+}
+
+.n-bar-item > .text-link{
+    width: 20%;
+}
+
+#text-link{
+    width: 170%;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    .header{
+        display: flex ;
+        flex-wrap: wrap-reverse ;
+        }
+
+    .n-bar-item{
+        display: none;
+    }
+
+    .nav_bar_icon :hover{
+        
+        border-style: groove;
+        border-radius: 30%;
+    }
+    .nav_bar_icon{
+        display: inline;
+        width: 12%;
+        border-style: none;
+    }
+    
+    .icon-navb-img{
+        width: 200%;
+        
+    }
+    .udemy-logo{
+        margin-left: -20%;
+        
+    }
+    /* .course1{
+        margin: 20%;
+    } */
+}
+
+.btn-coloring{
+    background-color: black;
+    
+}
+
+.btn{
+    margin: -8%;
+    background-color: aquamarine;
+    
+}
+/*$grid-breakpoints:( xs: 0, sm: 576px, md: 768px, lg: 992px );*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+    
+}
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+.course-container{
+    display: table-cell;  
+}
+.course-container-inner{
+    padding: 13%;
+    justify-content: center;
+}
+.course-text{
+    justify-content: center;
+}
+.h{
+    width: 120%;
+}
+.search-btn{
+    width: 15%;
+    border-style: none;
+    background-color: white;
+}
+.wrapper{
+    display: table-row-group;
+    margin: 30%;
+}
+.categories-container{
+    display: table-cell;
+}
+
+.image-class {
+   width: 100%;
+   height: 190%;
+}
